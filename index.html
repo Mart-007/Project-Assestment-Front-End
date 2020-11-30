@@ -1,0 +1,243 @@
+<!-- Hi! I'm Reymart, I would like to apologize that I didn't finished this front-end 
+coding exam, it is because I'm scared that I might late for the submission, that might not able to
+accept my exam. 
+
+I am hoping that you will give me a chance, this is my dream job..
+
+When I was in college I am a coder for most of our projects and thesis.
+These are the following I made:
+
+[ Daily Time Record | Vb.net | Ms SQL ] 
+[ Payroll Sytem | Vb.net | Ms SQL ]
+[ Inventory System | Vb.net | Ms SQL ]
+[ Korean Culture Website | HTML | CSS |JAVASCRIPT ]
+[ Marine Vessel Reservation Sytem | Bootstrap 3 | HTML | CSS | JAVASCRIPT | PHP]
+
+I'm stuck for almost two years because after my graduation in college, my left leg were
+broke caused by the tumor and had surgery. I'm depressed those times because my family were gets
+poorer after that horrible event happened, I used mobile phone in review of coding back then but furtunately I have
+now a computer set from my cousin to start coding again. I took IT course even if I don't have a laptop nor phone before.
+I feel releived now and recovered. I am the happiest person on earth if this dream of mine will granted.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reefe</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6f6938841f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="main.css/style.css">
+    <link rel="stylesheet" href="/main.css/sidebar-icon.css">
+    <link rel="stylesheet" href="main.css/clock.css">
+    <link rel="stylesheet" href="main.css/video.css">
+</head>
+<body>
+    <div id="hero-wrapper">
+        <div class="wrapper">
+            <header>
+              
+                     <nav>
+                       <div class="logo">
+                      <a href="#hero-wrapper"><img src="images/logo-reffic.png" alt="logo" class="logo"></a>
+                        </div>
+                      <ul class="nav-links">
+                            <li><a href="#blue-container" class="product">PRODUCT</a></li>
+                            <li><a href="#" class="token">TOKEN SALE</a></li>
+                            <li><a href="#" class="team">TEAM</a></li>
+                            <li><a href="#" class="faq">FAQ</a></li>
+                            <li><a href="#" class="contact">CONTACT</a></li>
+                            <li >
+                              <a href="#" class="whitepaper">WHITEPAPER<i class="fas fa-cloud-download-alt"></i>
+                              </a>
+                          </li>
+                            <li><a href="#" class="sign">SIGN IN</a></li>
+                            <li><a href="#" class="sign">EN</a></li>
+                        </ul>
+                        <!-- This is the burger menu-->
+                      
+                        <div class="burger">
+                         
+                            <div class="line1"></div>
+                            <div class="line2"></div>
+                            <div class="line3"></div>
+                        </div>
+                     </nav>
+                     <script src="app.js"> </script>
+            </header>
+
+            <div class="hero-content">
+                <h1> HAVE A REEFIC DAY! </h1>
+                    <p class="description"><span> Reefic Protocol is a decentralised platform where customers can exchange reward </br> points
+                         across multiple loyalty programs and selected cryptocurrencies. </span>. </p>
+
+                        
+                        <!-- This is for sidebar-icon Sir.. -->
+
+            <div id="mySidebar" class="sidebar-icon"  onmouseover="toggleSidebar()" onmouseout="toggleSidebar()">
+                <ul>
+                 <a href="#"></a><i class="fab fa-twitter"></i></a>
+                 <a href="#"><i class="far fa-paper-plane"></i></a>
+                 <a href="#"><i class="m-icon"> <img src="https://img.icons8.com/ios-filled/50/000000/medium-logo.png" class="m-logo"/> </i></a>
+                 <a href="#"><i class="fab fa-github"></i></a>
+                </ul>
+            </div>   
+     
+
+
+                         <!-- This is for Clock Countdown Sir.. -->
+                <p id="demo"></p>
+                <div class="clockWrap">
+                    <div class="timeWrapper">
+                      <div id="clockdiv">
+                        <h1 class="clock">OPEN FOR TOKEN SALE IN</h1>
+                        <div class="white"> <span class="days"></span>
+                          <div class="smalltext" id="days_title"></div>
+                        </div>
+                        <div class="white"><span class="hours"></span>
+                          <div class="smalltext" id="hours_title"></div>
+                        </div>
+                        <div class="white"><span></span>
+                          <div class="smalltext">&nbsp;</div>
+                        </div>
+                        <div class="white"><span class="minutes"></span>
+                          <div class="smalltext" id="mins_title"></div>
+                        </div>
+                        <div class="white"> <span></span>
+                          <div class="smalltext">&nbsp;</div>
+                        </div>
+                        <div class="white"><span class="seconds"></span>
+                          <div class="smalltext" id="secs_title"></div>
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                <script>
+
+        // This is the JavaScript of the Clock Sir..          
+var eventDate = 'Dec 7 2020 20:24:18 GMT-0400';
+  function time_remaining(endtime) {
+  var t = Date.parse(endtime) - Date.parse(new Date());
+  var seconds = Math.floor((t / 1000) % 60);
+  var minutes = Math.floor((t / 1000 / 60) % 60);
+  var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+  var days = Math.floor(t / (1000 * 60 * 60 * 24));
+  return {
+    'total': t,
+    'days': days,
+    'hours': hours,
+    'minutes': minutes,
+    'seconds': seconds
+  };
+}
+
+function run_clock(id, endtime) {
+  var clock = document.getElementById(id);
+
+  // get spans where our clock numbers are held
+  var days_span = clock.querySelector('.days');
+  var hours_span = clock.querySelector('.hours');
+  var minutes_span = clock.querySelector('.minutes');
+  var seconds_span = clock.querySelector('.seconds');
+
+  var days_title = document.getElementById('days_title');
+  var hours_title = document.getElementById('hours_title');
+  var mins_title = document.getElementById('mins_title');
+  var secs_title = document.getElementById('secs_title');
+
+  function update_clock() {
+    var t = time_remaining(endtime);
+
+    // update the numbers in each part of the clock
+    days_span.innerHTML = t.days;
+    // Determine title for Day(s)
+    if (t.days === 1) {
+      days_title.innerHTML = 'Day';
+    } else {
+      days_title.innerHTML = 'Days';
+    }
+    // Determine title for Hour(s)
+    hours_span.innerHTML = ('0' + t.hours).slice(-2);
+    if (t.hours === 1) {
+      hours_title.innerHTML = 'Hour';
+    } else {
+      hours_title.innerHTML = 'Hours';
+    }
+    // Determine title for Min(s)
+    minutes_span.innerHTML = ('0' + t.minutes).slice(-2);
+    if (t.minutes === 1) {
+      mins_title.innerHTML = 'Minute';
+    } else {
+      mins_title.innerHTML = 'Minutes';
+    }
+    // Determine title for Sec(s)
+    seconds_span.innerHTML = ('0' + t.seconds).slice(-2);
+    if (t.seconds === 1) {
+      secs_title.innerHTML = 'Second';
+    } else {
+      secs_title.innerHTML = 'Seconds';
+    }
+
+    if (t.total <= 0) {
+      clearInterval(timeinterval);
+      document.getElementById("clockdiv").style.display = "none";
+    }
+
+  }
+  update_clock();
+  var timeinterval = setInterval(update_clock, 1000);
+
+}
+run_clock('clockdiv', eventDate); </script>
+        </div>
+
+        <div class="wb-button"> 
+          <ul class="wb-list">
+            <li><a href="#" class="whitelist">WHITELIST</a></li>
+            <li><a href="#" class="bounty-b">BOUNTY</a></li>
+          </ul>
+        </div>
+
+        <div class="custom-shape-divider-bottom-1606547313">
+          <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+              <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+          </svg>
+      </div>
+      
+        </div>
+    </div>
+              <!-- This is Second Section-->
+
+    <div id="blue-container">
+       <section class='video'>
+         <h1 class='video-header'>REEFIC PROTOCOL EXPLAINED</h1>
+            <div class="video-yt-img">
+              <img class='video-img' src="images/video.png" alt="protocol-explanation">
+            </div>
+
+        <ul class='social-icons row'>
+          <li><i class="fab fa-twitter social-icons-white fa-2x fa-pull-right fa-2x fa-pull-left fa-border"></i></li>
+          <li><i class="fab fa-telegram-plane social-icons-white fa-2x fa-pull-right fa-2x fa-pull-left fa-border"></i></li>
+          <li><i class="fab fa-medium-m social-icons-white fa-2x fa-pull-right fa-2x fa-pull-left fa-border"></i></li>
+          <li><i class="fab fa-github social-icons-white fa-2x fa-pull-right fa-2x fa-pull-left fa-border"></i></li>
+        </ul>
+    
+        <div class='buttons-sect-two'>
+          <button class='whitepaper-b'>WHITEPAPER</button>
+          <button class='one-pager'>ONE PAGER</button>
+        </div>
+    </section>
+  </div>
+  <div class="custom-shape-divider-bottom-1606635252-b">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none" >
+        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill" style="background-color:aquamarine"></path>
+    </svg>
+</div>
+  
+ 
+  
+</body>
+</html>

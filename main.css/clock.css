@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+.clockWrap {
+    text-align: center;
+    font-weight: 700;
+    font-size: 50px;
+    max-width: 100%;
+    display: inline;
+  }
+  
+  .clock {
+color: #ffffff;
+font-size: 60px;
+font-weight: 600;
+font-family: "Montserrat";
+text-align: center;
+   /* font-size: 60px;
+    line-height: 36px;
+    margin: 0;
+    padding: 50px 0 30px;
+    font-weight: 600;
+    font-family: "Montserrat";
+    text-align: center;
+
+    font-size: 60px;
+color: #ffffff;*/
+
+  }
+  
+  .day {
+    padding-right: 44px;
+  }
+  
+  .colon {
+    font-size: 30px;
+    padding-right: 25px;
+    padding-left: 25px;
+    line-height: 60px;
+  }
+  
+  
+  /*--Colors--*/
+  
+  .white {
+    color: white;
+  }
+  #clockdiv {
+    display: inline-block;
+    text-align: center;
+  }
+  
+  #clockdiv>div {
+    padding-bottom: 50px;
+    display: inline-block;
+  }
+  
+  .smalltext {
+    padding-top: 5px;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  
+  @media only screen and (max-width: 540px) {
+    .timeWrapper {
+      width: 167px;
+      margin: auto;
+      padding-bottom: 15px;
+    }
+    h1.clock {
+      font-size: 20px;
+      line-height: 36px;
+      padding: 18px 0 5px;
+    }
+    .day {
+      padding-right: 0;
+    }
+    .colon {
+      display: none !important;
+    }
+    #clockdiv {
+     
+     
+        display: inline-block;
+        text-align: center;
+      
+    }
+    #clockdiv>div {
+      padding-bottom: 12px;
+      display: inline-block;
+      justify-content: space-around;
+    }
+    .smalltext {
+      padding-top: 19px;
+      padding-left: 15px;
+      font-size: 18px;
+      line-height: 24px;
+      float: right;
+      display: inline;
+    }
+
+    #demo {
+      margin: 0;
+      padding: 0;
+    }
+  }

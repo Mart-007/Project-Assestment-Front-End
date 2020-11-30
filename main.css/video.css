@@ -1,0 +1,207 @@
+
+#blue-container {
+    background-color: rgb(65, 201, 225);
+   height: 100vh;
+   background-image: url("/images/meet-the\ cast\ bg.png ");
+   
+}
+
+.video-img {
+    display: flex;
+    align-items: center;
+    position: realtive;
+    margin: auto;
+    padding: auto;
+    height: 480px;
+    width: 851;
+    padding: 20px;
+}
+/* For Shape */
+
+  .video-header{  
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh ;
+    font-family: "Montserrat";
+    padding-bottom: 134px;
+    padding: 25px;
+    padding-right: 20px;
+    
+}
+
+.video-header  {
+    font-weight: 900;
+    color: rgb(114, 25, 114);
+    padding-top: 10%;
+    padding: 20px;
+    font-size: x-large;
+}
+
+
+.social-icons {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    width: 20%;
+    position: relative;
+    margin-left: 40%;
+    margin-right: 50%;
+    
+
+}
+.fa-border {
+    display: block;
+    height: 4vw;
+    width: 4vw;
+    border-radius: 50%;
+    box-shadow: 0px 1px 10px 0px rgb(181, 165, 196);
+    border: 5px solid white;
+    background-color: white;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-top: 13px;
+    padding-left: 13px;
+}
+
+.fa-border:hover{
+    background-color: rgb(0, 195, 255);
+}
+
+
+.social-icons li {
+    list-style-type: none;
+    display: flex;
+ 
+   
+}
+
+  
+  .whitepaper-b {
+    border: 1px solid white;
+    margin-left: 38%;
+    padding: 15px;
+    color: white;
+    background-color: rgb(71, 15, 124);
+    font-weight: bolder;
+    box-shadow: 0px 1px 10px 0px rgb(181, 165, 196);
+    width: 10%;
+  }
+  .whitepaper-b:hover{
+      background-color: white;
+      color: black;
+  }
+  
+  .one-pager {
+    border: 1px solid white;
+    margin-right: 38%;
+    padding: 15px;
+    color: white;
+    background-color: rgb(71, 15, 124);
+    font-weight: bolder;
+    box-shadow: 0px 1px 10px 0px rgb(181, 165, 196);
+    width: 10%;
+  }
+  .one-pager:hover{
+    background-color: white;
+    color: black;
+}
+
+  .buttons-sect-two {
+    display: flex;
+    align-items: center;
+    padding-top: 10vh;
+    justify-content: space-around;
+
+  }
+
+  /* For shape */
+  .custom-shape-divider-bottom-1606635252 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+  
+}
+
+.custom-shape-divider-bottom-1606635252-b svg {
+    position: relative;
+    display: block;
+    width: calc(114% + 1.3px);
+    height: 64px;
+ 
+}
+
+.custom-shape-divider-bottom-1606635252-b .shape-fill {
+    fill: rgb(65, 201, 225);
+    opacity: .1s;
+    z-index: -1;
+    height: 100vh;  
+}
+
+
+  @media screen and (max-width:768px){ 
+
+ #blue-container{
+    height: 100vh;
+    width: 100vw;
+ }
+
+ .video-header {
+     text-align: center;
+     font-weight: bold;
+ }
+
+ .video-img {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: auto;
+    padding: auto;
+    height: 200px;
+    width: cover;
+    padding: 20px;
+    
+ }
+
+ .fa-border {
+    display: block;
+    height: 15vw;
+    width: 15vw;
+    border-radius: 50%;
+    box-shadow: 0px 1px 10px 0px rgb(181, 165, 196);
+    border: 5px solid white;
+    background-color: white;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-top: 13px;
+    padding-left: 13px;
+}
+
+.fa-border:hover{
+    background-color: rgb(0, 195, 255);
+}
+
+
+.social-icons li {
+    list-style-type: none;
+    display: flex;
+ 
+   
+}
+
+
+.whitepaper-b {
+    margin-left: 10%;
+    width: 30%;
+}
+
+.one-pager {
+    margin-right: 10%;
+    width: 30%;
+}
+
+  }
